@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+double max(double a,double b);
+int main(void)
+{
+	//把球看成与其相外切的小正方体，并且默认从box外顶角 开始堆砌
+	double r,R;
+	double s=0,m=0,q;
+	for(r=0.000001;r<=1;r+=0.000001)
+	{
+		int x=(int)(1/r)*(int)(1/r)*(int)(1/r);
+		s=x*r*r;
+		q=m;
+		m=max(m,s);
+		if(q!=m)  R=r;
+	}
+	printf("当小球的半径r=%f时，sum r*r有最大值%f",R,m); 
+}
+
+double max(double a,double b)
+{
+	if(a>=b) return a;
+	else return b;
+}
