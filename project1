@@ -31,13 +31,9 @@ double sumr = 0;							//用来记录r^2之和
 
 int main()
 {
-    int n, pointNum, i;
+    int n, i;
     printf("请输入空间内所要放置的气球数量: ");
     scanf("%d",&n);
-    for(i = 0; i < pointNum; i ++)
-   
-       
-    }
     printf("\n球编号\t x坐标\t y坐标\t 半径\t r^2之和\n");
     for(i = 0; i < n; i ++)
     {
