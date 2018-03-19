@@ -105,6 +105,7 @@ void putBall()
     }
 }
 
+
 int judge(Ball b)
 {
     if((abs(b.x) + b.r) > 1 || (abs(b.y) + b.r) > 1)
