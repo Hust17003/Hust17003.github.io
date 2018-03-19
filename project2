@@ -97,6 +97,7 @@ void putBall()
     }
     if(judge(maxBall))
     {
+    
         insert(maxBall);
         num++;
         sumr += maxBall.r * maxBall.r;
